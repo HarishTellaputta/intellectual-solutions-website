@@ -12,7 +12,8 @@ class IntellectualSolutionsApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Intellectual Solutions',
+      // APP TITLE
+      title: 'Intellectual Digital Solutions',
       theme: ThemeData(
         useMaterial3: true,
         fontFamily: 'Arial',
@@ -134,18 +135,34 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
+
               const SizedBox(width: 12),
-              const Text(
-                'Intellectual Solutions',
-                style: TextStyle(
-                  fontSize: 19,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFF111827),
-                ),
+
+              const Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Intellectual Digital Solutions',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF111827),
+                    ),
+                  ),
+                  SizedBox(height: 2),
+                  Text(
+                    'Our Solutions Make You Grow',
+                    style: TextStyle(
+                      fontSize: 10,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xFF2563EB),
+                      letterSpacing: 0.3,
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
-
           const Spacer(),
 
           if (!isMobile) ...[
@@ -306,7 +323,7 @@ class _HomePageState extends State<HomePage> {
         ),
         const SizedBox(height: 22),
         const Text(
-          'Intellectual Solutions builds modern websites, '
+          'Intellectual Digital Solutions builds modern websites, '
           'mobile applications and business platforms designed '
           'to simplify operations and improve digital experiences.',
           style: TextStyle(fontSize: 18, height: 1.7, color: Color(0xFF64748B)),
@@ -839,7 +856,7 @@ class _HomePageState extends State<HomePage> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          'ABOUT INTELLECTUAL SOLUTIONS',
+          'ABOUT INTELLECTUAL DIGITAL SOLUTIONS',
           style: TextStyle(
             color: Color(0xFF2563EB),
             fontSize: 13,
@@ -859,7 +876,7 @@ class _HomePageState extends State<HomePage> {
         ),
         const SizedBox(height: 22),
         const Text(
-          'Intellectual Solutions focuses on building practical '
+          'Intellectual Digital Solutions focuses on building practical '
           'software products that help businesses move from manual '
           'processes to connected digital operations.',
           style: TextStyle(fontSize: 17, height: 1.7, color: Color(0xFF64748B)),
@@ -984,7 +1001,7 @@ class _HomePageState extends State<HomePage> {
       color: const Color(0xFF020617),
       child: const Center(
         child: Text(
-          '© 2026 Intellectual Solutions. All rights reserved.',
+          '© 2026 Intellectual Digital  Solutions. All rights reserved.',
           style: TextStyle(color: Color(0xFF64748B), fontSize: 13),
         ),
       ),
