@@ -194,7 +194,7 @@ class _HomePageState extends State<HomePage> {
           ),
           child: const Center(
             child: Text(
-              'IS',
+              'IDS',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 16,
